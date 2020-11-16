@@ -1,7 +1,59 @@
-@media (max-width: 1600px) {
+@media (max-width: 1530px) {
+    .main-page {
+        &__head {
+            margin-left: 30px;
+            margin-right: 30px;
+            max-width: 700px;
+        }
+
+        &__title {
+            font-size: 140px;
+        }
+
+        &__subtitle {
+            font-size: 60px;
+            padding-top: 10px;
+    
+        }
+    }
+}
+@media (max-width: 1530px) {
+    .main-page {
+        &__head {
+            max-width: 500px;
+        }
+
+        &__title {
+            font-size: 100px;
+            margin-top: 0;
+        }
+
+        &__subtitle {
+            font-size: 40px;
+    
+        }
+    }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
+    .main-page {
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__head {
+            width: 100%;
+            max-width: 100%;
+            order: -1;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            max-width: 500px;
+        }
+    }
 
 }
 
@@ -44,9 +96,50 @@
         }
     }
 
+    .navigation {
+        display: none;
+    }
+
+    
+    
     .main-page {
+        min-height: auto;
+        padding-bottom: 20px;
+        
         &__inner {
             margin-top: 90px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__head {
+            max-width: 500px;
+            margin: 0 auto;
+            margin-bottom: 270px;
+        }
+
+        &__form-title {
+            font-weight: 300;
+        }
+
+        &__title {
+            max-width: 100%;
+            font-size: 60px;
+            font-weight: 300;
+            color: #efebe4;
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+        
+        &__subtitle {
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 1.2;
+
+            &::before {
+                height: 2px;
+            }
         }
     }
 }
@@ -55,4 +148,17 @@
 }
 
 @media (max-width: 400px) {
+}
+
+@media (max-width: 370px) {
+    .main-page__title {
+        font-size: 57px;
+    }
+    .main-page__subtitle {
+        font-size: 27px;
+    }
+
+    .header__menu {
+        padding: 55px;
+    }
 }

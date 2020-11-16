@@ -11,10 +11,18 @@ $(function(){
             $('html').removeClass('block-scroll');
         });
     }
+
+    function initMainPageList() {
+        $('.main-page__list-head').on('click', () => {
+            $('.main-page__list-items').slideToggle(500); 
+        });
+    }
     
     
     if (window.innerWidth <= 768) {
         initMenu();
     }
+
+    initMainPageList();
     
 });

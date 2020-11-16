@@ -1,5 +1,145 @@
 .main-page {
+    padding-top: 55px;
+    min-height: 1420px;
     &__inner {
-        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 165px;
     }
+
+    &__head {
+        max-width: 830px;
+    }
+
+    &__title {
+        font-size: 160px;
+        font-weight: 300;
+        color: rgba(6, 29, 22, 0.95);
+        line-height: 0.94;
+        margin-bottom: 35px;
+        margin-top: -65px;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-size: 80px;
+        font-weight: 300;
+        color: $light;
+        padding-top: 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 4px;
+            width: 100%;
+            background-color: $light;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    &__form {
+        max-width: 360px;
+        width: 100%;
+    }
+    
+    &__form-title {
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 1.11;
+        margin-bottom: 15px;
+    }
+
+    &__form-item {
+        margin-bottom: 10px;
+
+        input[type=text] {
+            display: block;
+            font-family: Abraham;
+            font-size: 20px;
+            font-weight: 300;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset -3px 3px 20px 0 rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.75);
+            padding: 6px 8px;
+            
+            &::placeholder {
+                color: #7b7b7b;
+            }
+        }
+    }
+
+    &__list {
+        display: block;
+        font-family: Abraham;
+        font-size: 20px;
+        font-weight: 300;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset -3px 3px 20px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    &__list-head {
+        cursor: pointer;
+        position: relative;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.1;
+        color: #6d7278;
+        padding: 6px 8px;
+        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset -3px 3px 20px 0 rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.75);
+        padding-left: 30px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 0;
+            border-style: solid;
+            border-width: 8px 5.5px 0 5.5px;
+            border-color: #000000 transparent transparent transparent;
+        }
+    }
+
+    &__list-items {
+        display: none;
+        margin-top: 10px;
+        box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset -3px 3px 20px 0 rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 18px;
+    }
+
+    &__form-checkbox {
+        margin-bottom: 15px;
+
+        label {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        input {
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 12px;
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__form-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
 }
