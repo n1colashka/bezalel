@@ -20,9 +20,9 @@ $(function(){
     
     
     if (window.innerWidth <= 768) {
-        initMenu();
     }
 
     initMainPageList();
+    initMenu();
     
 });
