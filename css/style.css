@@ -118,12 +118,10 @@ input::-webkit-inner-spin-button {
 
 @keyframes text {
   0% {
-    transform: translateY(50px);
-    opacity: 0;
+    transform: translate(0, 100%);
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
 
@@ -315,7 +313,16 @@ input::-webkit-inner-spin-button {
   line-height: 0.94;
   margin-bottom: 35px;
   margin-top: -65px;
-  animation: text 1.5s ease 1 forwards;
+  overflow: hidden;
+}
+
+.main-page__title .line {
+  transform: translate(0, 100%);
+  animation: text .7s ease 1 forwards;
+}
+
+.main-page__title .line span, .main-page__title .line strong {
+  overflow: hidden;
 }
 
 .main-page__subtitle {
@@ -422,10 +429,10 @@ input::-webkit-inner-spin-button {
 .main-page__form-checkbox label {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .main-page__form-checkbox input {
-  display: inline-block;
   margin-left: 15px;
   margin-top: 12px;
 }

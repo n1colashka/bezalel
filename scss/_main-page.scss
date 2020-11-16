@@ -19,7 +19,17 @@
         line-height: 0.94;
         margin-bottom: 35px;
         margin-top: -65px;
-        animation: text 1.5s ease 1 forwards;
+        overflow: hidden;
+
+        .line {
+            transform: translate(0, 100%);
+            animation: text .7s ease 1 forwards;
+
+            span, strong {
+            overflow: hidden;
+            }
+
+        }
     }
 
     &__subtitle {
@@ -125,10 +135,10 @@
         label {
             display: flex;
             align-items: flex-start;
+            justify-content: flex-start;
         }
         
         input {
-            display: inline-block;
             margin-left: 15px;
             margin-top: 12px;
         }
