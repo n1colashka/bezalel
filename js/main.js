@@ -1,6 +1,5 @@
 $(function(){
 
-    
     function initMenu() {
         $('.header__menu-btn').on('click', () => {
             $('.header__menu').slideDown(500);

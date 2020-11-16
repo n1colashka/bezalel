@@ -158,7 +158,6 @@ input::-webkit-inner-spin-button {
 }
 
 .header {
-  overflow: hidden;
   position: fixed;
   z-index: 90;
   left: 0;
@@ -327,7 +326,6 @@ input::-webkit-inner-spin-button {
 
 .main-page {
   padding-top: 55px;
-  min-height: 1420px;
 }
 
 .main-page__inner {
