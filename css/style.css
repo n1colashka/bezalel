@@ -128,6 +128,15 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@keyframes textDown {
+  0% {
+    transform: translate(0, -200%);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
 @keyframes line {
   0% {
     width: 0;
@@ -149,6 +158,7 @@ input::-webkit-inner-spin-button {
 }
 
 .header {
+  overflow: hidden;
   position: fixed;
   z-index: 90;
   left: 0;
@@ -157,6 +167,8 @@ input::-webkit-inner-spin-button {
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: #64D8B3;
+  transform: translate(0, -200%);
+  animation: textDown 2s ease 1 forwards;
 }
 
 .header__inner {
