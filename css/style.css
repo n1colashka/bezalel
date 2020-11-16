@@ -108,6 +108,9 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset -3px 3px 20px 0 rgba(255, 255, 255, 0.2);
   background-color: #ffffff;
+  transform: translate(200%, 0);
+  animation: text-right 1s ease 1 forwards;
+  opacity: 0;
   transition: .3s ease;
 }
 
@@ -118,10 +121,30 @@ input::-webkit-inner-spin-button {
 
 @keyframes text {
   0% {
-    transform: translate(0, 100%);
+    transform: translate(0, 200%);
   }
   100% {
     transform: translate(0px, 0px);
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes text-right {
+  0% {
+    transform: translate(200%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
 
@@ -317,11 +340,16 @@ input::-webkit-inner-spin-button {
 }
 
 .main-page__title .line {
+  overflow: hidden;
   transform: translate(0, 100%);
-  animation: text .7s ease 1 forwards;
+  animation: text 1s ease 1 forwards;
 }
 
-.main-page__title .line span, .main-page__title .line strong {
+.main-page .line {
+  overflow: hidden;
+}
+
+.main-page .animate-wrapper {
   overflow: hidden;
 }
 
@@ -331,6 +359,9 @@ input::-webkit-inner-spin-button {
   font-weight: 300;
   color: #efebe4;
   padding-top: 10px;
+  overflow: hidden;
+  transform: translate(0, 100%);
+  animation: text 1s ease 1 forwards;
 }
 
 .main-page__subtitle::before {
@@ -341,15 +372,25 @@ input::-webkit-inner-spin-button {
   background-color: #efebe4;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 0;
+  animation: line 1.5s ease 1 forwards;
+  animation-delay: 1.5s;
 }
 
 .main-page__form {
   max-width: 360px;
   width: 100%;
+  overflow: hidden;
+}
+
+.main-page__form form {
+  transform: translate(0, 100%);
+  animation: text 1s ease 1 forwards;
 }
 
 .main-page__form-title {
+  transform: translate(0, 150%);
+  animation: text 1s ease 1 forwards;
   font-size: 27px;
   font-weight: bold;
   line-height: 1.11;

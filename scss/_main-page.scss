@@ -22,14 +22,19 @@
         overflow: hidden;
 
         .line {
-            transform: translate(0, 100%);
-            animation: text .7s ease 1 forwards;
-
-            span, strong {
             overflow: hidden;
-            }
+            transform: translate(0, 100%);
+            animation: text 1s ease 1 forwards;
 
         }
+    }
+
+    .line {
+        overflow: hidden;
+    }
+
+    .animate-wrapper {
+        overflow: hidden;
     }
 
     &__subtitle {
@@ -38,6 +43,9 @@
         font-weight: 300;
         color: $light;
         padding-top: 10px;
+        overflow: hidden;
+        transform: translate(0, 100%);
+        animation: text 1s ease 1 forwards;
 
         &::before {
             position: absolute;
@@ -47,16 +55,26 @@
             background-color: $light;
             left: 0;
             top: 0;
-            width: 100%;
+            width: 0;
+            animation: line 1.5s ease 1 forwards;
+            animation-delay: 1.5s;
         }
     }
 
     &__form {
         max-width: 360px;
         width: 100%;
+        overflow: hidden;
+        
+        form {
+            transform: translate(0, 100%);
+            animation: text 1s ease 1 forwards;
+        }
     }
     
     &__form-title {
+        transform: translate(0, 150%);
+        animation: text 1s ease 1 forwards;
         font-size: 27px;
         font-weight: bold;
         line-height: 1.11;
@@ -139,7 +157,6 @@
         }
         
         input {
-            // display: none;
             margin-left: 13px;
             margin-top: 12px;
             flex-shrink: 0;
