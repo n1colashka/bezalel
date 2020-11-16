@@ -433,7 +433,13 @@ input::-webkit-inner-spin-button {
 }
 
 .main-page__form-checkbox input {
-  border-radius: 0;
+  margin-left: 13px;
+  margin-top: 12px;
+  flex-shrink: 0;
+}
+
+.main-page__form-checkbox input:checked ~ .checkmark::before {
+  opacity: 1;
 }
 
 .main-page__form-checkbox:last-child {
@@ -443,6 +449,26 @@ input::-webkit-inner-spin-button {
 .main-page__form-btn {
   width: 100%;
   margin-top: 10px;
+}
+
+.checkmark {
+  position: relative;
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+}
+
+.checkmark::before {
+  position: absolute;
+  content: "";
+  background: url("../images/check.svg") center no-repeat;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
 }
 
 @media (max-width: 1530px) {

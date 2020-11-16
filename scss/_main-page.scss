@@ -139,9 +139,15 @@
         }
         
         input {
-            // margin-left: 15px;
-            // margin-top: 12px;
-            border-radius: 0;
+            // display: none;
+            margin-left: 13px;
+            margin-top: 12px;
+            flex-shrink: 0;
+            &:checked ~ .checkmark {
+                &::before {
+                    opacity: 1;
+                }
+            }
         }
         
         &:last-child {
@@ -154,4 +160,26 @@
         margin-top: 10px;
     }
 
+}
+
+
+.checkmark {
+    position: relative;
+    display: block;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url('../images/check.svg') center no-repeat;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    
 }
