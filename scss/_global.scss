@@ -13,7 +13,9 @@ html {
 
 body {
     font-family: Abraham, sans-serif;
+    font-weight: 400;
     overflow-x: hidden;
+    background-color: rgb(131, 183, 224);
 }
 
 ul {
@@ -42,11 +44,19 @@ h6 {
     margin: 0;
 }
 .container {
-    max-width: 1550px;
+    max-width: 1770px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 15px;
     box-sizing: border-box;
+}
+
+.block-scroll {
+    overflow: hidden;
+
+    body {
+        overflow: hidden;
+    }
 }
 
 .btn {

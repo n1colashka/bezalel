@@ -9,9 +9,46 @@
 }
 
 @media (max-width: 991px) {
+    .header {
+        &__logo {
+            width: 350px;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    
+        &__btn {
+            font-size: 22px;
+            margin-right: 40px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+        
+        &__logo {
+            width: 293px;
+        }
+        
+        &__links {
+            display: none;
+        }
+
+        &__menu-btn {
+            display: block;
+        }
+    }
+
+    .main-page {
+        &__inner {
+            margin-top: 90px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
