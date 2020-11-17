@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="79" viewBox="0 0 78 79">
+    <defs>
+        <filter id="zpe23klzna" width="155%" height="155%" x="-22.5%" y="-22.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="3" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+        <filter id="zd90ezcp5c" width="171.7%" height="171.7%" x="-30.8%" y="-30.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="10"/>
+            <feOffset dx="-3" dy="3" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"/>
+        </filter>
+        <path id="dhvep0yxbb" d="M30 0L60 60 0 60z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-1724 -2669) translate(1730 2675)">
+                    <use fill="#000" filter="url(#zpe23klzna)" xlink:href="#dhvep0yxbb"/>
+                    <use fill="#FFF" fill-opacity=".75" xlink:href="#dhvep0yxbb"/>
+                    <use fill="#000" filter="url(#zd90ezcp5c)" xlink:href="#dhvep0yxbb"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -16,12 +16,29 @@ $(function(){
             $('.main-page__list-items').slideToggle(500); 
         });
     }
+
+    function initPlyr() {
+        if ($('.plyr-player')) {
+            const players = Array.from(document.querySelectorAll('.plyr-player')).map(p => new Plyr(p, {muted:true}));
+        }
+    }
+
+    function initScrollBtn() {
+            $('.scroll-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+    }
     
     
     if (window.innerWidth <= 768) {
     }
 
-    initMainPageList();
     initMenu();
+    initMainPageList();
+    initPlyr();
+    initScrollBtn()
     
 });

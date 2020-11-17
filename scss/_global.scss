@@ -117,3 +117,28 @@ input::-webkit-inner-spin-button {
         }
     }
 }
+
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+    width: 64px;
+    height: 80px;
+    background: url('../images/triangle.svg') center / cover no-repeat;
+    svg {
+        display: none;
+    }
+}
+
+.plyr--video {
+    border-radius: 10px;
+}
+
+.plyr__controls {
+    display: none;
+}
+
+.grey-bg {
+    background-color: #efebe4;
+}
+
+.scroll-top {
+    cursor: pointer;
+}

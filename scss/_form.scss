@@ -1,0 +1,56 @@
+.bottom-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color:#64D8B3;
+    z-index: 91;
+    padding: 48px 0;
+    overflow: visible;
+    animation: text 1s ease 1 forwards;
+    transform: translateY(200%);
+
+    form {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .main-page__form-item {
+        max-width: 340px;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        input {
+            display: inline-block;
+            height: 65px;
+        }
+    }
+
+    .main-page__form-btn {
+        margin-right: 50px;
+        height: 65px;
+        margin-top: 0;
+    }
+
+    .main-page__list-head {
+        display: flex;
+        align-items: center;
+        height: 65px;
+        border-radius: 5px;
+    }
+
+    .main-page__list-items {
+        position: absolute;
+        top: -700%;
+        left: 200px;
+        z-index: 11;
+        max-height: 500px;
+        overflow: auto;
+    }
+
+}
