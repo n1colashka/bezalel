@@ -692,6 +692,8 @@ input::-webkit-inner-spin-button {
   color: rgba(0, 0, 0, 0.85);
   margin-bottom: 35px;
   margin-top: -70px;
+  transform: translate(0, 200%);
+  animation: text 1s ease 1 forwards;
 }
 
 .video-page__subtitle {
@@ -699,6 +701,8 @@ input::-webkit-inner-spin-button {
   font-weight: 300;
   line-height: 2.06;
   color: rgba(0, 0, 0, 0.85);
+  transform: translate(0, 200%);
+  animation: text 1s ease 1 forwards;
 }
 
 .video-page__list {
@@ -795,6 +799,8 @@ input::-webkit-inner-spin-button {
 
 .text-page__text p {
   margin-bottom: 40px;
+  transform: translate(0, 200%);
+  animation: text 1s ease 1 forwards;
 }
 
 .text-page__title {
@@ -805,6 +811,17 @@ input::-webkit-inner-spin-button {
   color: #efebe4;
   margin-left: 50px;
   margin-right: 50px;
+  overflow: hiden;
+}
+
+.text-page__title > span {
+  display: inline-block;
+}
+
+.text-page__title span > span {
+  display: inline-block;
+  transform: translate(0, 200%);
+  animation: text 1s ease 1 forwards;
 }
 
 .aside {

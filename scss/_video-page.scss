@@ -37,12 +37,16 @@
         color: rgba(0, 0, 0, 0.85);
         margin-bottom: 35px;
         margin-top: -70px;
+        transform: translate(0, 200%);
+        animation: text 1s ease 1 forwards; 
     }
     &__subtitle {
         font-size: 30px;
         font-weight: 300;
         line-height: 2.06;
         color: rgba(0, 0, 0, 0.85);
+        transform: translate(0, 200%);
+        animation: text 1s ease 1 forwards; 
     }
 
     &__list {

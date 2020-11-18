@@ -13,6 +13,8 @@
 
         p {
             margin-bottom: 40px;
+            transform: translate(0, 200%);
+            animation: text 1s ease 1 forwards; 
         }
     }
 
@@ -24,6 +26,17 @@
         color: #efebe4;
         margin-left: 50px;
         margin-right: 50px;
+        overflow: hiden;
+
+        & > span {
+            display: inline-block;
+        }
+
+        span > span {
+            display: inline-block;
+            transform: translate(0, 200%);
+            animation: text 1s ease 1 forwards; 
+        }
     }
 }
 
