@@ -1,7 +1,6 @@
 .video-page {
     width: 100%;
     padding-right: 60px;
-    padding-bottom: 260px;
 
     &__wrapper {
         overflow: hidden;
@@ -105,21 +104,16 @@
             box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.24);
         }
     }
+    
+}
 
-    &__foot {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 40px;
-        overflow: hidden;
-    }
+.video-page__foot.page-foot {
+    color: #000000;
 
     .top-line,
     .bottom-line {
         position: absolute;
         height: 2px;
-        // width: 100%;
         background-color: #000000;
         left: 0;
         top: 0;
@@ -130,28 +124,5 @@
         left: auto;
         bottom: 0;
         top: auto;
-    }
-
-    &__stat {
-        max-width: 535px;
-        width: 100%;
-    }
-
-    &__percent {
-        font-size: 304.4px;
-        color: #000000;
-        margin-top: -40px;
-    }
-
-    &__stat-text {
-        font-size: 32px;
-        font-weight: 500;
-        color: #000000;
-        margin-top: -30px;
-        padding-bottom: 40px;
-    }
-
-    &__img {
-        margin-left: 30px;
     }
 }

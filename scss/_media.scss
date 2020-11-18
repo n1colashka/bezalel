@@ -24,6 +24,12 @@
             font-size: 26px;
         }
     }
+
+    .text-page {
+        &__text {
+            padding-left: 0;
+        }
+    }
 }
 @media (max-width: 1530px) {
     .main-page {
@@ -44,6 +50,17 @@
 }
 
 @media (max-width: 1366px) {
+    .text-page {
+        &__title {
+            margin-top: -20px;
+            font-size: 92px;
+        }
+
+        &__text {
+            font-size: 28px;
+        }
+    }
+    
     .modal {
         &__title {
             font-size: 92px;
@@ -128,6 +145,27 @@
 
 @media (max-width: 1024px) {
 
+    .page-foot {
+        margin-bottom: 40px;
+        flex-direction: column;
+
+        &__stat-text {
+            font-size: 18px;
+        }   
+
+        &__percent {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 188.5px;
+        }
+        
+        
+        &__img {
+            order: 2;
+            margin-left: 0;
+        }
+    }
+
     .page-form-mobile {
         display: block;
 
@@ -142,28 +180,7 @@
     
     .video-page {
         padding-top: 0px;
-        padding-bottom: 40px;
 
-        &__stat-text {
-            font-size: 18px;
-        }   
-
-        &__foot {
-            flex-direction: column;
-        }
-
-        &__percent {
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        &__img {
-            img {
-                height: 270px;
-            }
-            margin-left: 0;
-            order: 2;
-        }
     }
     
     .modal {
@@ -195,6 +212,23 @@
 
 @media (max-width: 991px) {
     
+    .text-page {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 22px;
+        }
+
+        &__text {
+            p {
+                margin-bottom: 25px;
+            }
+        }
+    }
     
     .header {
         &__logo {
@@ -213,15 +247,34 @@
 }
 
 @media (max-width: 768px) {
+    .page-foot {
+        &__stat-text {
+            text-align: center;
+        }
+    }
+    .text-page {
+        &__text {
+            font-size: 18px;
+            line-height: 1.33;
+        }
+
+        &__content {
+            margin-bottom: 30px;
+        }
+        
+        &__title {
+            font-size: 46px;
+            font-weight: bold;
+            line-height: 1;
+        }
+    }
+    
     .video-page {
-        padding-bottom: 45px;
         &__scroll-top {
             width: 29px;
             height: 19px;
         }
     }
-
-    
     
     .modal {
         top: 70px;

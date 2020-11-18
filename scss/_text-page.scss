@@ -1,0 +1,29 @@
+.text-page {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 180px;
+    }
+
+    &__text {
+        font-size: 30px;
+        color: #efebe4;
+        padding-left: 100px;
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-top: -50px;
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 1;
+        color: #efebe4;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+

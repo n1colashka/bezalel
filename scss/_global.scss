@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: Abraham, sans-serif;
     font-weight: 400;
     overflow-x: hidden;
@@ -138,7 +139,13 @@ input::-webkit-inner-spin-button {
 }
 
 .scroll-top {
+    position: absolute;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
+    right: -200px;
+    bottom: -120px;
+    z-index: 90;
 }
 
 .modal {
@@ -219,4 +226,20 @@ input::-webkit-inner-spin-button {
 
 .page-form-mobile {
     display: none;
+}
+
+.top-line,
+.bottom-line {
+    position: absolute;
+    height: 2px;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+}
+
+.bottom-line {
+    right: 0;
+    left: auto;
+    bottom: 0;
+    top: auto;
 }
