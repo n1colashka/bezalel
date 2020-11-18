@@ -84,9 +84,8 @@
         font-weight: bold;
         line-height: 1;
         margin-bottom: 75px;
-    }
-
-    &__items {
+        animation: text 1s ease 1 forwards;
+        transform: translate(0, 200%);
     }
 
     &__item {

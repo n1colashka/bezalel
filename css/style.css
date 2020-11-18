@@ -898,6 +898,8 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
   line-height: 1;
   margin-bottom: 75px;
+  animation: text 1s ease 1 forwards;
+  transform: translate(0, 200%);
 }
 
 .page__item {
