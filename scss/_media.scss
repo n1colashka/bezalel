@@ -254,7 +254,34 @@
 }
 
 @media (max-width: 768px) {
+    .schedule {
+        &__title {
+            margin-bottom: 40px;
+            line-height: 1;
+        }
+        
+        .page__item {
+            padding: 15px 0;
+            
+        }
+
+        .page__item-title {
+            font-size: 19px;
+            line-height: 1.16;
+        }
+        .divider {
+            display: none;
+        }
+
+    }
     .page {
+        &__item-time {
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 8px;
+            
+        }
+        
         .scroll-top {
             left: 0;
         }

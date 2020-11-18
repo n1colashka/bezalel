@@ -1,0 +1,21 @@
+.schedule {
+    &__title {
+        margin-left: auto;
+        line-height: 1;
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .page__item {
+        display: flex;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+
+    .page__item-title {
+        flex-shrink: 1;
+        padding: 0;
+    }
+
+}

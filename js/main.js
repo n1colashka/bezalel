@@ -54,7 +54,7 @@ $(function(){
 
     function initAccordion() {
 
-        if( $('.accordion')) {
+        if( $('.accordion').length < 0) {
             $('.page__items').on('click', e => {
                 if (e.target.closest('.accordion__btn') || (e.target.closest('.page__item-title'))) {
                     e.target.closest('.page__item').classList.toggle('active');

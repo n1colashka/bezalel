@@ -872,6 +872,10 @@ input::-webkit-inner-spin-button {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
+.accordion .page__item-title {
+  max-width: 700px;
+}
+
 .page__content {
   color: #efebe4;
   margin-bottom: 170px;
@@ -891,6 +895,13 @@ input::-webkit-inner-spin-button {
   left: auto;
   bottom: 0;
   top: auto;
+}
+
+.page__item-time {
+  font-size: 45px;
+  font-weight: bold;
+  margin-left: 90px;
+  margin-top: 5px;
 }
 
 .page__title {
@@ -934,6 +945,26 @@ input::-webkit-inner-spin-button {
   flex-grow: 1;
   padding: 25px 0;
   font-size: 45px;
+}
+
+.schedule__title {
+  margin-left: auto;
+  line-height: 1;
+}
+
+.schedule__title span {
+  font-weight: 300;
+}
+
+.schedule .page__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 25px 0;
+}
+
+.schedule .page__item-title {
+  flex-shrink: 1;
+  padding: 0;
 }
 
 .aside {
@@ -1260,6 +1291,25 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px) {
+  .schedule__title {
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+  .schedule .page__item {
+    padding: 15px 0;
+  }
+  .schedule .page__item-title {
+    font-size: 19px;
+    line-height: 1.16;
+  }
+  .schedule .divider {
+    display: none;
+  }
+  .page__item-time {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 8px;
+  }
   .page .scroll-top {
     left: 0;
   }
