@@ -40,3 +40,11 @@
         opacity: 1;
     }
 }
+
+[data-aos="line"] {
+    width: 0;
+    transition-property: width;
+    &.aos-animate {
+        width: 100%;
+    }
+}

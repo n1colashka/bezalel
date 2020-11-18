@@ -112,25 +112,24 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 40px;
+        overflow: hidden;
+    }
 
-        &::before {
-            position: absolute;
-            content: "";
-            height: 2px;
-            width: 100%;
-            background-color: #000000;
-            left: 0;
-            top: 0;
-        }
-        &::after {
-            position: absolute;
-            content: "";
-            height: 2px;
-            width: 100%;
-            background-color: #000000;
-            left: 0;
-            bottom: 0;
-        }
+    .top-line,
+    .bottom-line {
+        position: absolute;
+        height: 2px;
+        // width: 100%;
+        background-color: #000000;
+        left: 0;
+        top: 0;
+    }
+
+    .bottom-line {
+        right: 0;
+        left: auto;
+        bottom: 0;
+        top: auto;
     }
 
     &__stat {
