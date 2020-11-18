@@ -59,3 +59,21 @@
     }
 
 }
+
+.page-form-mobile {
+    margin-bottom: 25px;
+
+    &__title {
+        font-size: 27px;
+        font-weight: 300;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.85);
+        box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, 0.1), inset -3px 3px 20px 0 rgba(255, 255, 255, 0.2);
+        background-color:#fff;
+        padding: 8px 17px;
+        margin-bottom: 25px;
+    }
+    
+}
