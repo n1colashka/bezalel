@@ -80,6 +80,13 @@
 }
 
 @media (max-width: 1200px) {
+    .scroll-top {
+        top: -80px;
+        right: auto;
+        left: 0;
+        bottom: auto;
+    }
+    
     .bottom-form {
         padding: 24px 0;
         .main-page__form-btn {
@@ -247,6 +254,11 @@
 }
 
 @media (max-width: 768px) {
+    .scroll-top {
+        width: 29px;
+        height: 19px;
+        top: -45px;
+    }
     .page-foot {
         &__stat-text {
             text-align: center;
