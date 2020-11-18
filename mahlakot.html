@@ -41,7 +41,7 @@
     
     <section class="main-page">
         <div class="container">
-            <div class="main-page__inner">
+            <div class="main-page__inner inner-page">
                 <aside class="aside">
                     <nav class="main-page__nav navigation">
                         <ul>
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -135,7 +135,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -152,7 +152,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -169,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -187,7 +187,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -204,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -221,7 +221,7 @@
                                 </div>
                             </div>
                             <div class="video-page__item-links">
-                                <a class="video-page__item-link-green" href="#" >הרשמה למפגש מקוון</a>
+                                <a class="video-page__item-link-green modal-btn" href="#" >הרשמה למפגש מקוון</a>
                                 <a class="video-page__item-link" href="#" >עוד על המחלקה</a>
                             </div>
                         </li>
@@ -245,117 +245,249 @@
         </div>
     </section>
 
-   <div class="video-page__wrapper">
-    <section class="main-page__form bottom-form" style="animation-delay: 1.5s">
-        <div class="container">
-            <form action="#" style="animation-delay: 1.8s">
-                <div class="main-page__form-item">
-                    <input type="text" placeholder="שם מלא">
-                </div>
-                <div class="main-page__form-item">
-                    <input type="text" placeholder="נייד">
-                </div>
-                <div class="main-page__form-item">
-                    <input type="text" placeholder="מייל">
-                </div>
-                <div class="main-page__form-item">
-                    <input type="text" placeholder="מייל">
-                </div>
-                <div class="main-page__list">
-                    <div class="main-page__list-head">
-                        <div class="main-page__list-subtitle">
-                            <span>באיזה מפגשים ברצונך להשתתף </span>
-                        </div>
-                    </div>
-                    
-                    <ul class="main-page__list-items">
-                        <li class="main-page__form-checkbox">
-                            <label>
+    <div class="modal">
+        <button class="modal__close"><span></span></button>
+        <div class="modal__content">
+            <div class="modal__title">תקשורת חזותית</div>
+            <div class="modal__text">
+                <p>
+                    בכל תחומי העשייה המגוונים במחלקה, בין אם יהיה זה עיצוב ספר, עיצוב אתר אינטרנט, איור, מסע פרסום, משחק מחשב או אריזה לערוץ טלוויזיה, בבסיסה של היצירה נמצא תמיד אותו פלא, אותו קסם, הקרוי תקשורת חזותית. אותו מהלך בו עוברים מסרים, רעיונות, תחושות ומידע באמצעות צורה. אותה שפה העושה שימוש בחומר, צבע, תנועה, צליל, אות ודימוי.  <br>
+האתגר העומד בפנינו, כיוצרים בתחומי התקשורת החזותית, הוא ההכרח ללכת בתלם ומחוצה לו בעת ובעונה אחת. בכדי לתקשר, אנו פועלים בתוך המכנה המשותף, בתוך מוסכמות השפה. בד בבד, בכדי לחדש, בכדי להיות מקוריים ומפתיעים, אנחנו מחויבים לפרוץ את המסגרת, לבעוט ולבטל את חומות התלמים החרושים, ולפלס את הדרך אל מחוץ לקונבנציה. 
 
-                                <input type="checkbox">
-                                מפגש עם המנהל האקדמי:
-                                <br>
-                                תהליך ההרשמה ותנאי הקבלה
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש עם דקנאט הסטודנטים: מלגות, מעונות, סיוע כלכלי וחברתי
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לעיצוב תעשייתי
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לעיצוב קרמי וזכוכית
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לתרבות חזותית וחומרית
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לתרבות חזותית וחומרית
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לצילום
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לארכיטקטורה
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לאמנויות המסך
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לצורפות ואופנה
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לתקשורת חזותית
-                            </label>
-                        </li>
-                        <li class="main-page__form-checkbox">
-                            <label>
-                                <input type="checkbox">
-                                מפגש במחלקה לאמנות
-                            </label>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <button class="main-page__form-btn btn">שלח.י</button>
-            </form>
+                </p>
+                <p>
+                    הלימודים במחלקה מתחילים בשנתיים ראשונות של לימודי חובה ביסודות העיצוב והתקשורת החזותית.  במהלך השנים ג' ו-ד' תכנית הלימודים היא גמישה ואישית. כל סטודנט בוחר אם להתמחות בתחום מסוים או לעסוק במספר תחומים באופן רחב ומגוון יותר. הסטודנטים יכולים להתמקד באחד מתחומי הידע שהמחלקה עוסקת בהם: עיצוב גרפי, טיפוגרפיה, מיתוג, עיצוב אינטראקטיבי ו־UX/UI, איור, משחקים, עיצוב בתנועה ועוד. לחילופין, הם יכולים לבחור להרכיב מערכת לימודים המשלבת בין שני תחומי ידע או או יותר. 
+                    השילוב בין תחומי הידע, בין אם במבנה ותכני הקורסים עצמם ובין אם בבחירת קורסים מתחומים שונים, מעודד יצירה רב־תחומית, היכרות רחבה עם עולם התקשורת החזותית, ורסטיליות ובעיקר יכולת תנועה עתידית בין התחומים השונים. <br>
+                    בלימודיהם במחלקה מתנסים הסטודנטים בטכניקות מסורתיות לצד עשייה בקדמת הטכנולוגיה. הקשר שבין היד הרושמת, הנוגעת בחומר, והממשק העתידני הטכנולוגי, הוא אחד מעקרונות היסוד של המחלקה. <br>
+                    תכנית הלימודים במחלקה מעודדת יצירה פורצת גבולות, חוקרת, וניסיונית ללא כל ויתור על הקניית מקצוענות, מיומנות גבוהה ויכולת עבודה מעשית. בנוסף, אנו מבקשים לחנך את הסטודנטים לחשיבה ביקורתית ואתית ולחתירה מתמדת למצוינות ולחדשנות. כל אלה מתקיימים בסביבה פעילה ודינמית ובה דיון ער, אירועים מחלקתיים רבים, הרצאות, תערוכות, סדנאות אורח ופעילות בינלאומית ענפה. <br>
+                    המחלקה מבקשת להקנות לבוגריה יכולת למידה עתידית בתנאים משתנים ולהכשירם להיות מעצבים פעילים, מנהיגים ויזמים שישנו את פני המרחב החזותי בישראל. 
+                </p>
+            </div>
         </div>
-    </section>
-   </div>
+    </div>
 
+    <div class="video-page__wrapper">
+        <section class="main-page__form bottom-form" style="animation-delay: 1.5s">
+            <div class="container">
+                <form action="#" style="animation-delay: 1.8s">
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="שם מלא">
+                    </div>
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="נייד">
+                    </div>
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="מייל">
+                    </div>
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="מייל">
+                    </div>
+                    <div class="main-page__list">
+                        <div class="main-page__list-head">
+                            <div class="main-page__list-subtitle">
+                                <span>באיזה מפגשים ברצונך להשתתף </span>
+                            </div>
+                        </div>
+                        
+                        <ul class="main-page__list-items">
+                            <li class="main-page__form-checkbox">
+                                <label>
 
-    <footer class="footer">
-    </footer>
+                                    <input type="checkbox">
+                                    מפגש עם המנהל האקדמי:
+                                    <br>
+                                    תהליך ההרשמה ותנאי הקבלה
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש עם דקנאט הסטודנטים: מלגות, מעונות, סיוע כלכלי וחברתי
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לעיצוב תעשייתי
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לעיצוב קרמי וזכוכית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לתרבות חזותית וחומרית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לתרבות חזותית וחומרית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לצילום
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לארכיטקטורה
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לאמנויות המסך
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לצורפות ואופנה
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לתקשורת חזותית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לאמנות
+                                </label>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <button class="main-page__form-btn btn">שלח.י</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <div class="page-form-mobile">
+        <div class="container">
+            <div class="main-page__form">
+                <div class="animate-wrapper">
+                    <h3 class="main-page__form-title" style="animation-delay: 1.6s">הדרך שלך מתחילה כאן:</h3>
+                </div>
+                <form action="#" style="animation-delay: 1.8s">
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="שם פרטי">
+                    </div>
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="שם משפחה">
+                    </div>
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="נייד">
+                    </div>
+                    <div class="main-page__form-item">
+                        <input type="text" placeholder="מייל">
+                    </div>
+                    <div class="main-page__list">
+                        <div class="main-page__list-head">
+                            <div class="main-page__list-subtitle">
+                                <span>נא לסמן באיזה מפגשים ברצונך להשתתף</span>
+                            </div>
+                            <div class="main-page__list-title">
+                                <strong> ניתן להירשם לכל המפגשים</strong>
+                            </div>
+                        </div>
+                        
+                        <ul class="main-page__list-items">
+                            <li class="main-page__form-checkbox">
+                                <label>
+    
+                                    <input type="checkbox">
+                                    מפגש עם המנהל האקדמי:
+                                    <br>
+                                    תהליך ההרשמה ותנאי הקבלה
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש עם דקנאט הסטודנטים: מלגות, מעונות, סיוע כלכלי וחברתי
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לעיצוב תעשייתי
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לעיצוב קרמי וזכוכית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לתרבות חזותית וחומרית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לתרבות חזותית וחומרית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לצילום
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לארכיטקטורה
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לאמנויות המסך
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לצורפות ואופנה
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לתקשורת חזותית
+                                </label>
+                            </li>
+                            <li class="main-page__form-checkbox">
+                                <label>
+                                    <input type="checkbox">
+                                    מפגש במחלקה לאמנות
+                                </label>
+                            </li>
+                        </ul>
+                        
+                        <button class="main-page__form-btn btn">שלח.י</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     
     <script src="js/libs.js"></script>
     <script src="js/main.js"></script>
