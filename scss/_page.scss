@@ -1,0 +1,131 @@
+.accordion {
+
+    &__wrapper {
+    }
+
+    &__title {
+        
+    }
+
+    &__content {
+        display: none;
+        max-width: 820px;
+        margin-right: 100px;
+        margin-left: 50px;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.33;
+        margin-top: 23px;
+        margin-bottom: 33px;
+        
+
+        p {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        position: relative;
+        width: 42px;
+        height: 42px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        flex-shrink: 0;
+        margin-top: 35px;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #efebe4;
+            transition: .3s ease;
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+        
+    }
+}
+.page {
+
+    &__content {
+        color: #efebe4;
+        margin-bottom: 170px;
+
+        
+        .top-line,
+        .bottom-line {
+            position: absolute;
+            height: 2px;
+            background-color: #ffffff;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .bottom-line {
+            right: 0;
+            left: auto;
+            bottom: 0;
+            top: auto;
+        }
+    }
+
+    &__title {
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 75px;
+    }
+
+    &__items {
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 10px;
+        &.active {
+
+            .page__item-title {
+                font-weight: 700;
+            }
+
+            .accordion__btn {
+                &::before,
+                &::after {
+                    left: 40%;
+                    top: calc(50% + 15px);
+                    transform: rotate(45deg) translate(-50%, -50%);
+                }
+        
+                &::after {
+                    top: calc(50% - 15px);
+                    transform: rotate(-45deg) translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    &__item-wrapper {
+        position: relative;
+    }
+
+    &__item-title {
+        cursor: pointer;
+        flex-shrink: 0;
+        flex-grow: 1;
+        padding: 25px 0;
+        font-size: 45px;
+    }
+
+}

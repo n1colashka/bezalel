@@ -30,8 +30,15 @@
     }
     
     &__img {
+        position: relative;
         max-width: 800px;
         margin-left: 30px;
+
+        .top-line,
+        .bottom-line {
+            display: none;
+        }
+        
         img {
             width: 100%;
         }

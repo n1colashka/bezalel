@@ -83,7 +83,7 @@
     .scroll-top {
         top: -80px;
         right: auto;
-        left: 0;
+        left: 17px;
         bottom: auto;
     }
     
@@ -153,7 +153,7 @@
 @media (max-width: 1024px) {
 
     .page-foot {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         flex-direction: column;
 
         &__stat-text {
@@ -254,11 +254,104 @@
 }
 
 @media (max-width: 768px) {
+    .page {
+        .scroll-top {
+            left: 0;
+        }
+        
+        &__title {
+            font-size: 46px;
+            line-height: 1.04;
+            margin-bottom: 25px;
+        }
+
+
+        &__item-title {
+            font-size: 27px;
+            padding: 15px 0;
+        }
+
+        &__content {
+            margin-bottom: 0;
+        }
+
+        .page-foot {
+            & > .top-line {
+                display: none;
+            }
+        }
+    }
+
+    .page-foot {
+        &__img {
+            padding-top: 20px;
+            .top-line,
+            .bottom-line {
+                display: block;
+            }
+        }
+    }
+    
+    .accordion {
+        .page__item.active .accordion__btn::before,
+        .page__item.active .accordion__btn::after {
+            top: calc(50% + 10px);
+        }
+
+        .page__item.active .accordion__btn::after {
+            top: calc(50% - 11px);
+        }
+        
+        .page__item-title {
+            width: 100%;
+            padding-left: 30px;
+        }
+
+        .page__item-wrapper {
+            margin: 0 -18px;
+        }
+
+        .page__item {
+            flex-direction: column;
+            padding: 0 18px;
+        }
+        
+        &__btn {
+            position: absolute;
+            margin-top: 0;
+            width: 30px;
+            height: 30px;
+            top: 20px;
+            left: 18px;
+        }
+        
+        
+        &__content {
+            font-size: 18px;
+            margin: 10px 0;
+            margin-top: 0;
+            p {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .inner-page.page__wrapper {
+        margin-top: 0;
+    }
+    
     .scroll-top {
         width: 29px;
         height: 19px;
         top: -45px;
     }
+
+    .page {
+        .scroll-top {
+            top: 15px;
+        }
+    }
+    
     .page-foot {
         &__stat-text {
             text-align: center;
@@ -285,6 +378,7 @@
         &__scroll-top {
             width: 29px;
             height: 19px;
+            top: 15px;
         }
     }
     
