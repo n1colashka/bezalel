@@ -872,10 +872,6 @@ input::-webkit-inner-spin-button {
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.accordion .page__item-title {
-  max-width: 700px;
-}
-
 .page__content {
   color: #efebe4;
   margin-bottom: 170px;
