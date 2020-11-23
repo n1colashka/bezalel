@@ -13,6 +13,7 @@
 
     &__title {
         font-size: 160px;
+        font-family: 'Abraham-Light', sans-serif;
         font-weight: 300;
         color: rgba(6, 29, 22, 0.95);
         line-height: 0.94;
@@ -24,7 +25,10 @@
             overflow: hidden;
             transform: translate(0, 100%);
             animation: text 1s ease 1 forwards;
+        }
 
+        strong {
+            font-family: 'Abraham-Bold', sans-serif;
         }
     }
 
@@ -39,6 +43,7 @@
     &__subtitle {
         position: relative;
         font-size: 80px;
+        font-family: 'Abraham-Light', sans-serif;
         font-weight: 300;
         color: $light;
         padding-top: 10px;
@@ -75,6 +80,7 @@
         transform: translate(0, 150%);
         animation: text 1s ease 1 forwards;
         font-size: 27px;
+        font-family: "Abraham-Bold", sans-serif;
         font-weight: bold;
         line-height: 1.11;
         margin-bottom: 15px;
@@ -85,7 +91,7 @@
 
         input[type=text] {
             display: block;
-            font-family: Abraham;
+            font-family: "Abraham-Light", sans-serif;
             font-size: 20px;
             font-weight: 300;
             width: 100%;
@@ -103,7 +109,7 @@
 
     &__list {
         display: block;
-        font-family: Abraham;
+        font-family: "Abraham-Light", sans-serif;
         font-size: 20px;
         font-weight: 300;
         width: 100%;
@@ -116,6 +122,7 @@
         cursor: pointer;
         position: relative;
         font-size: 20px;
+        font-family: "Abraham-Light", sans-serif;
         font-weight: 300;
         line-height: 1.1;
         color: #6d7278;

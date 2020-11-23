@@ -1,9 +1,36 @@
 @font-face {
-  font-family: "Abraham";
-  src: url("../fonts/Abraham.woff2") format("woff2"),
-  url("../fonts/Abraham.woff") format("woff"),
-  url("../fonts/Abraham.ttf") format("opentype");
+  font-family: "Abraham-Light";
+  src: url("../fonts/Abraham-Light.woff2") format("woff2"),
+  url("../fonts/Abraham-Light.woff") format("woff"),
+  url("../fonts/Abraham-Light.eot") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abraham-Regular";
+  src: url("../fonts/Abraham-Regular.woff2") format("woff2"),
+  url("../fonts/Abraham-Regular.woff") format("woff"),
+  url("../fonts/Abraham-Regular.eot") format("opentype");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abraham-Medium";
+  src: url("../fonts/Abraham-Medium.woff2") format("woff2"),
+  url("../fonts/Abraham-Medium.woff") format("woff"),
+  url("../fonts/Abraham-Medium.eot") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Abraham-Bold";
+  src: url("../fonts/Abraham-Bold.woff2") format("woff2"),
+  url("../fonts/Abraham-Bold.woff") format("woff"),
+  url("../fonts/Abraham-Bold.eot") format("opentype");
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }

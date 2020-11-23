@@ -14,7 +14,7 @@ html {
 
 body {
     position: relative;
-    font-family: Abraham, sans-serif;
+    font-family: 'Abraham-Regular', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
     background-color: rgb(131, 183, 224);
@@ -194,6 +194,7 @@ input::-webkit-inner-spin-button {
     &__title {
         font-size: 120px;
         line-height: 1;
+        font-family: 'Abraham-Bold';
         font-weight: bold;
         color: #000000;
         max-width: 520px;

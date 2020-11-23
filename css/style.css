@@ -1,8 +1,32 @@
 @font-face {
-  font-family: "Abraham";
-  src: url("../fonts/Abraham.woff2") format("woff2"), url("../fonts/Abraham.woff") format("woff"), url("../fonts/Abraham.ttf") format("opentype");
+  font-family: "Abraham-Light";
+  src: url("../fonts/Abraham-Light.woff2") format("woff2"), url("../fonts/Abraham-Light.woff") format("woff"), url("../fonts/Abraham-Light.eot") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abraham-Regular";
+  src: url("../fonts/Abraham-Regular.woff2") format("woff2"), url("../fonts/Abraham-Regular.woff") format("woff"), url("../fonts/Abraham-Regular.eot") format("opentype");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abraham-Medium";
+  src: url("../fonts/Abraham-Medium.woff2") format("woff2"), url("../fonts/Abraham-Medium.woff") format("woff"), url("../fonts/Abraham-Medium.eot") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Abraham-Bold";
+  src: url("../fonts/Abraham-Bold.woff2") format("woff2"), url("../fonts/Abraham-Bold.woff") format("woff"), url("../fonts/Abraham-Bold.eot") format("opentype");
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -22,7 +46,7 @@ html {
 
 body {
   position: relative;
-  font-family: Abraham, sans-serif;
+  font-family: 'Abraham-Regular', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   background-color: #83b7e0;
@@ -198,6 +222,7 @@ input::-webkit-inner-spin-button {
 .modal__title {
   font-size: 120px;
   line-height: 1;
+  font-family: 'Abraham-Bold';
   font-weight: bold;
   color: #000000;
   max-width: 520px;
@@ -339,7 +364,7 @@ input::-webkit-inner-spin-button {
   display: block;
   position: relative;
   font-size: 30px;
-  font-weight: 300;
+  font-family: "Abraham-Light", sans-serif;
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -476,6 +501,7 @@ input::-webkit-inner-spin-button {
 
 .main-page__title {
   font-size: 160px;
+  font-family: 'Abraham-Light', sans-serif;
   font-weight: 300;
   color: rgba(6, 29, 22, 0.95);
   line-height: 0.94;
@@ -490,6 +516,10 @@ input::-webkit-inner-spin-button {
   animation: text 1s ease 1 forwards;
 }
 
+.main-page__title strong {
+  font-family: 'Abraham-Bold', sans-serif;
+}
+
 .main-page .line {
   overflow: hidden;
 }
@@ -501,6 +531,7 @@ input::-webkit-inner-spin-button {
 .main-page__subtitle {
   position: relative;
   font-size: 80px;
+  font-family: 'Abraham-Light', sans-serif;
   font-weight: 300;
   color: #efebe4;
   padding-top: 10px;
@@ -537,6 +568,7 @@ input::-webkit-inner-spin-button {
   transform: translate(0, 150%);
   animation: text 1s ease 1 forwards;
   font-size: 27px;
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
   line-height: 1.11;
   margin-bottom: 15px;
@@ -548,7 +580,7 @@ input::-webkit-inner-spin-button {
 
 .main-page__form-item input[type=text] {
   display: block;
-  font-family: Abraham;
+  font-family: "Abraham-Light", sans-serif;
   font-size: 20px;
   font-weight: 300;
   width: 100%;
@@ -565,7 +597,7 @@ input::-webkit-inner-spin-button {
 
 .main-page__list {
   display: block;
-  font-family: Abraham;
+  font-family: "Abraham-Light", sans-serif;
   font-size: 20px;
   font-weight: 300;
   width: 100%;
@@ -578,6 +610,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   position: relative;
   font-size: 20px;
+  font-family: "Abraham-Light", sans-serif;
   font-weight: 300;
   line-height: 1.1;
   color: #6d7278;
@@ -692,16 +725,17 @@ input::-webkit-inner-spin-button {
 
 .video-page__title {
   font-size: 120px;
+  line-height: 144px;
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
-  margin-bottom: 35px;
-  margin-top: -70px;
   transform: translate(0, 200%);
   animation: text 1s ease 1 forwards;
 }
 
 .video-page__subtitle {
   font-size: 30px;
+  font-family: "Abraham-Light", sans-serif;
   font-weight: 300;
   line-height: 2.06;
   color: rgba(0, 0, 0, 0.85);
@@ -725,6 +759,7 @@ input::-webkit-inner-spin-button {
 
 .video-page__item-title {
   font-size: 30px;
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
   line-height: 2.06;
   color: rgba(0, 0, 0, 0.85);
@@ -739,6 +774,7 @@ input::-webkit-inner-spin-button {
 .video-page__item-link {
   display: inline-block;
   font-size: 15px;
+  font-family: "Abraham-Regular", sans-serif;
   font-weight: normal;
   text-align: center;
   color: #1aca90;
@@ -755,6 +791,7 @@ input::-webkit-inner-spin-button {
 .video-page__item-link-green {
   display: inline-block;
   font-size: 15px;
+  font-family: "Abraham-Medium", sans-serif;
   font-weight: 500;
   text-align: center;
   color: rgba(255, 255, 255, 0.85);
@@ -808,14 +845,13 @@ input::-webkit-inner-spin-button {
 }
 
 .text-page__title {
-  margin-top: -50px;
   font-size: 120px;
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
-  line-height: 1;
+  line-height: .9;
   color: #efebe4;
   margin-left: 50px;
   margin-right: 50px;
-  overflow: hiden;
 }
 
 .text-page__title > span {
@@ -834,6 +870,7 @@ input::-webkit-inner-spin-button {
   margin-right: 100px;
   margin-left: 50px;
   font-size: 30px;
+  font-family: "Abraham-Light", sans-serif;
   font-weight: 300;
   line-height: 1.33;
   margin-top: 23px;
@@ -895,6 +932,7 @@ input::-webkit-inner-spin-button {
 
 .page__item-time {
   font-size: 45px;
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
   margin-left: 90px;
   margin-top: 5px;
@@ -902,6 +940,7 @@ input::-webkit-inner-spin-button {
 
 .page__title {
   font-size: 120px;
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 75px;
@@ -917,6 +956,7 @@ input::-webkit-inner-spin-button {
 }
 
 .page__item.active .page__item-title {
+  font-family: "Abraham-Bold", sans-serif;
   font-weight: 700;
 }
 
@@ -949,6 +989,7 @@ input::-webkit-inner-spin-button {
 }
 
 .schedule__title span {
+  font-family: "Abraham-Light", sans-serif;
   font-weight: 300;
 }
 
@@ -967,6 +1008,10 @@ input::-webkit-inner-spin-button {
   padding-left: 35px;
   width: 250px;
   flex-shrink: 0;
+}
+
+.aside ~ .video-page {
+  margin-top: -40px;
 }
 
 .bottom-form {
@@ -1037,7 +1082,7 @@ input::-webkit-inner-spin-button {
 
 .page-form-mobile__title {
   font-size: 27px;
-  font-weight: 300;
+  font-family: "Abraham-Light", sans-serif;
   line-height: 1.22;
   letter-spacing: normal;
   text-align: center;
@@ -1075,6 +1120,7 @@ input::-webkit-inner-spin-button {
 
 .page-foot__stat-text {
   font-size: 32px;
+  font-family: "Abraham-Medium", sans-serif;
   font-weight: 500;
   margin-top: -30px;
   padding-bottom: 40px;
@@ -1142,6 +1188,7 @@ input::-webkit-inner-spin-button {
 
 .register__title {
   font-size: 120px;
+  font-family: "Abraham-Light", sans-serif;
   font-weight: 300;
   line-height: 1;
   text-align: center;
@@ -1152,6 +1199,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   padding-top: 10px;
   font-size: 30px;
+  font-family: "Abraham-Medium", sans-serif;
   font-weight: 500;
   line-height: 1.67;
   text-align: center;
@@ -1273,34 +1321,7 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width: 1024px) {
-  .register {
-    padding-bottom: 0;
-    padding-top: 155px;
-  }
-  .register__item--sub .register__title {
-    margin-top: auto;
-  }
-  .register__title {
-    font-size: 46px;
-    font-weight: 300;
-  }
-  .register__subtitle {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.29;
-  }
-  .register__item {
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset 3px 3px 20px 0 rgba(255, 255, 255, 0.2);
-    margin-bottom: 20px;
-    color: rgba(0, 0, 0, 0.85);
-  }
-  .register__item .top-line,
-  .register__item .bottom-line {
-    background-color: #000000;
-  }
+@media (max-width: 1080px) {
   .page-foot {
     margin-bottom: 30px;
     flex-direction: column;
@@ -1328,6 +1349,36 @@ input::-webkit-inner-spin-button {
   }
   .video-page {
     padding-top: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .register {
+    padding-bottom: 0;
+    padding-top: 155px;
+  }
+  .register__item--sub .register__title {
+    margin-top: auto;
+  }
+  .register__title {
+    font-size: 46px;
+    font-weight: 300;
+  }
+  .register__subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.29;
+  }
+  .register__item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1), inset 3px 3px 20px 0 rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .register__item .top-line,
+  .register__item .bottom-line {
+    background-color: #000000;
   }
   .modal__content {
     flex-direction: column;

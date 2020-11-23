@@ -2,4 +2,7 @@
     padding-left: 35px;
     width: 250px;
     flex-shrink: 0;
+    & ~ .video-page {
+        margin-top: -40px;
+    }
 }
