@@ -4,12 +4,21 @@
     left: 0;
     width: 100%;
     max-width: 100%;
-    background-color:#64D8B3;
+    background-color: rgba(255, 255, 255, 0.3);
     z-index: 90;
     padding: 48px 0;
     overflow: visible;
     animation: text 1s ease 1 forwards;
     transform: translateY(200%);
+
+    &.animated {
+        animation: none;
+        transform: none;
+    }
+
+    &.blinking {
+        animation: blinking 1s ease 3;
+    }
 
     form {
         position: relative;

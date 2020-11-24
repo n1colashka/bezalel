@@ -1,5 +1,30 @@
 $(function(){
 
+    function blinkingForm() {
+        if (document.querySelector('.bottom-form')) {
+            document.querySelector('.bottom-form').addEventListener('transitionend', () => {
+                $('.bottom-form').addClass('animated');
+        
+                $('.header__btn').on('click', e => {
+                    e.preventDefault();
+                    $('.bottom-form').addClass('blinking');
+                    setTimeout(function() {
+                        $('.bottom-form').removeClass('blinking');
+                    }, 5000);
+                });
+                $('.video-page__list').on('click', e => {
+                    e.preventDefault();
+                    if (e.target.closest('.link-green')) {
+                        $('.bottom-form').addClass('blinking');
+                        setTimeout(function() {
+                            $('.bottom-form').removeClass('blinking');
+                        }, 5000);
+                    }
+                });
+            });
+        }
+    }
+    
     function initMenu() {
         $('.header__menu-btn').on('click', () => {
             $('.header__menu').slideDown(500);
@@ -63,17 +88,20 @@ $(function(){
                 }
             });
 
-            $('.accordion__btn').on('click', () => {
-                // document.querySelector('.accordion__btn').closest('.page__item').classList.toggle('active');
-                
-                // const el = document.querySelector('.accordion__btn').closest('.page__item').querySelector('.accordion__content');
-                
-                // $(el).slideToggle('500');
-            });
-            
         }
     }
 
+    function initScrollArrow() {
+        if (document.querySelector('.scroll-top')) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset >= 500) {
+                    $('.scroll-top').addClass('visible');
+                } else {
+                    $('.scroll-top').removeClass('visible');
+                }
+            });
+        }
+    }
     
     if (window.innerWidth <= 768) {
     }
@@ -84,4 +112,6 @@ $(function(){
     initScrollBtn()
     initModal();
     initAccordion();
+    initScrollArrow();
+    blinkingForm();
 });
