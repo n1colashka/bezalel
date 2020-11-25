@@ -1089,6 +1089,15 @@ input::-webkit-inner-spin-button {
   margin-top: 5px;
 }
 
+.page__item-title {
+  font-size: 45px;
+  font-family: "Abraham-Bold", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 22px;
+  color: #161a43;
+}
+
 .page__title {
   font-size: 120px;
   font-family: "Abraham-Bold", sans-serif;
@@ -1129,19 +1138,28 @@ input::-webkit-inner-spin-button {
 .page__item-title {
   cursor: pointer;
   flex-shrink: 0;
+  line-height: 1;
   flex-grow: 1;
   padding: 25px 0;
-  font-size: 45px;
 }
 
 .schedule__title {
   margin-left: auto;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
 .schedule__title span {
   font-family: "Abraham-Light", sans-serif;
   font-weight: 300;
+}
+
+.schedule .page__items {
+  margin-bottom: 80px;
+}
+
+.schedule .page__items:last-child {
+  margin-bottom: 0;
 }
 
 .schedule__btn {
@@ -1803,6 +1821,9 @@ input::-webkit-inner-spin-button {
     display: block;
   }
   .navigation {
+    display: none;
+  }
+  .schedule__btn {
     display: none;
   }
   .home-page .main-page__inner {

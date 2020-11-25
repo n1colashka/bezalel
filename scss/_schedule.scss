@@ -1,10 +1,18 @@
 .schedule {
     &__title {
         margin-left: auto;
+        margin-bottom: 40px;
         line-height: 1;
         span {
             font-family: "Abraham-Light", sans-serif;
             font-weight: 300;
+        }
+    }
+
+    .page__items {
+        margin-bottom: 80px;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
