@@ -1089,7 +1089,7 @@ input::-webkit-inner-spin-button {
   margin-top: 5px;
 }
 
-.page__item-title {
+.page__item-head {
   font-size: 45px;
   font-family: "Abraham-Bold", sans-serif;
   font-weight: bold;
@@ -1141,6 +1141,7 @@ input::-webkit-inner-spin-button {
   line-height: 1;
   flex-grow: 1;
   padding: 25px 0;
+  font-size: 45px;
 }
 
 .schedule__title {

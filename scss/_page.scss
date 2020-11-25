@@ -84,7 +84,7 @@
         margin-top: 5px;
     }
 
-    &__item-title {
+    &__item-head {
         font-size: 45px;
         font-family: "Abraham-Bold", sans-serif;
         font-weight: bold;
@@ -142,6 +142,7 @@
         line-height: 1;
         flex-grow: 1;
         padding: 25px 0;
+        font-size: 45px;
     }
 
 }
