@@ -1183,9 +1183,16 @@ input::-webkit-inner-spin-button {
   padding: 25px 0;
 }
 
+.schedule .page__item-time {
+  margin-top: 0;
+}
+
 .schedule .page__item-title {
   flex-shrink: 1;
   padding: 0;
+  font-family: 'Abraham-Regular', sans-serif;
+  font-weight: 400;
+  margin: 0;
 }
 
 .aside {
