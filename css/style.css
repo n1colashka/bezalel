@@ -49,7 +49,7 @@ body {
   font-family: 'Abraham-Regular', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
-  background: #f8a5dc;
+  background-color: #f8a5dc;
   background: linear-gradient(180deg, #f8a5dc 0%, #f8a5dc 10%, #ffcc66 17%, #ebd18c 35%, #c9dacc 43%, #c9d9cc 66%, #f8a5dc 79%, #f8a5dc 100%);
   min-height: 100vh;
 }
@@ -553,6 +553,15 @@ input::-webkit-inner-spin-button {
   color: #000000;
 }
 
+.home-page {
+  background: url("../images/web.png") bottom center no-repeat;
+  height: 100%;
+}
+
+.home-page .main-page {
+  min-height: 1300px;
+}
+
 .main-page {
   padding-top: 55px;
   overflow: hidden;
@@ -578,7 +587,7 @@ input::-webkit-inner-spin-button {
   font-size: 160px;
   font-family: 'Abraham-Light', sans-serif;
   font-weight: 300;
-  color: rgba(6, 29, 22, 0.95);
+  color: #161a43;
   line-height: 0.94;
   margin-bottom: 35px;
   margin-top: -35px;
@@ -608,7 +617,7 @@ input::-webkit-inner-spin-button {
   font-size: 80px;
   font-family: 'Abraham-Light', sans-serif;
   font-weight: 300;
-  color: #efebe4;
+  color: #161a43;
   padding-top: 10px;
   overflow: hidden;
   transform: translate(0, 100%);
@@ -620,7 +629,7 @@ input::-webkit-inner-spin-button {
   content: "";
   height: 4px;
   width: 100%;
-  background-color: #efebe4;
+  background-color: #161a43;
   left: 0;
   top: 0;
   width: 0;
@@ -1608,6 +1617,15 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px) {
+  .home-page {
+    background: url("../images/mobile.png") bottom center no-repeat;
+  }
+  .main-page__subtitle {
+    color: #ffffff;
+  }
+  .main-page__subtitle::before {
+    background-color: #fff;
+  }
   .video-page__title {
     margin-bottom: 30px;
   }

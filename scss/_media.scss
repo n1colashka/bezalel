@@ -318,6 +318,15 @@
 }
 
 @media (max-width: 768px) {
+    .home-page {
+        background: url('../images/mobile.png') bottom center no-repeat;
+    }
+    .main-page__subtitle {
+        color: #ffffff;
+        &::before {
+            background-color: #fff;
+        }
+    }
     .video-page {
         &__title {
             margin-bottom: 30px;
