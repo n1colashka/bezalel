@@ -1,4 +1,9 @@
-.bottom-form {
+.blinking {
+    animation: blinking 1s ease 3;
+}
+
+.form-wrapper {
+    overflow: visible;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -6,19 +11,16 @@
     max-width: 100%;
     background-color: rgba(255, 249, 238, 0.75);
     z-index: 90;
-    padding: 48px 0;
-    overflow: visible;
-    animation: text 1s ease 1 forwards;
     transform: translateY(200%);
+    animation: text 1s ease 1 forwards;
 
-    &.animated {
-        animation: none;
-        transform: none;
+    .bottom-form {
+        max-width: 100%;
     }
+}
 
-    &.blinking {
-        animation: blinking 1s ease 3;
-    }
+.bottom-form {
+    padding: 48px 0;
 
     form {
         position: relative;

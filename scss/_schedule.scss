@@ -8,9 +8,25 @@
         }
     }
 
+    &__btn {
+        background-color: #ffffff;
+        color: #161a43;
+        margin-right: 30px;
+
+        &:hover {
+            background-color: #161a43;
+            color: #ffffff;
+
+        }
+    }
+    
+    &.page {
+        max-width: 1440px;
+    }
+
     .page__item {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         padding: 25px 0;
     }
 

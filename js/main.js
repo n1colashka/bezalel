@@ -2,8 +2,7 @@ $(function(){
 
     function blinkingForm() {
         if (document.querySelector('.bottom-form')) {
-            document.querySelector('.bottom-form').addEventListener('transitionend', () => {
-                $('.bottom-form').addClass('animated');
+                // $('.bottom-form').addClass('animated');
         
                 $('.header__btn').on('click', e => {
                     e.preventDefault();
@@ -21,7 +20,6 @@ $(function(){
                         }, 5000);
                     }
                 });
-            });
         }
     }
     
@@ -54,6 +52,12 @@ $(function(){
 
     function initPlyr() {
         if ($('.plyr-player')) {
+            // $('.video-page').on('click', (e) => {
+            //     if (e.target.closest('.plyr-player')) {
+            //         console.log('clicked');
+            //         return new Plyr({muted: true})
+            //     }
+            // });
             const players = Array.from(document.querySelectorAll('.plyr-player')).map(p => new Plyr(p, {muted:true}));
         }
     }
