@@ -1036,7 +1036,7 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   cursor: pointer;
   flex-shrink: 0;
-  margin-top: 35px;
+  margin-top: 28px;
 }
 
 .accordion__btn::before, .accordion__btn::after {
@@ -1675,12 +1675,23 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     margin: 0;
   }
+  .schedule {
+    padding-bottom: 70px;
+  }
   .schedule__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 1;
   }
   .schedule .page__item {
     padding: 15px 0;
+  }
+  .schedule .page__items {
+    margin-bottom: 40px;
+  }
+  .schedule .page__item-head {
+    font-size: 19px;
+    line-height: 1.16;
+    margin-bottom: 14px;
   }
   .schedule .page__item-title {
     font-size: 19px;
@@ -1742,7 +1753,7 @@ input::-webkit-inner-spin-button {
     margin-top: 0;
     width: 30px;
     height: 30px;
-    top: 20px;
+    top: 16px;
     left: 18px;
   }
   .accordion__content {
@@ -1758,11 +1769,13 @@ input::-webkit-inner-spin-button {
   }
   .scroll-top {
     width: 29px;
-    height: 19px;
+    height: 24px;
     top: -45px;
   }
   .page .scroll-top {
-    top: 15px;
+    bottom: 42%;
+    left: 15px;
+    top: auto;
   }
   .page-foot__stat-text {
     text-align: center;

@@ -353,14 +353,25 @@
     }
     
     .schedule {
+        padding-bottom: 70px;
         &__title {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             line-height: 1;
         }
         
         .page__item {
             padding: 15px 0;
             
+        }
+
+        .page__items {
+            margin-bottom: 40px;
+        }
+
+        .page__item-head {
+            font-size: 19px;
+            line-height: 1.16;
+            margin-bottom: 14px;
         }
 
         .page__item-title {
@@ -446,7 +457,7 @@
             margin-top: 0;
             width: 30px;
             height: 30px;
-            top: 20px;
+            top: 16px;
             left: 18px;
         }
         
@@ -467,13 +478,15 @@
     
     .scroll-top {
         width: 29px;
-        height: 19px;
+        height: 24px;
         top: -45px;
     }
 
     .page {
         .scroll-top {
-            top: 15px;
+            bottom: 42%;
+            left: 15px;
+            top: auto;
         }
     }
     
