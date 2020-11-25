@@ -43,8 +43,10 @@ $(function(){
             }
             else if (!(e.target.closest('.main-page__list-head'))) {
                 $('.main-page__list-items').slideUp(500); 
+                $('.main-page__list-head').removeClass('open');
             } else {
                 $('.main-page__list-items').slideToggle(500); 
+                $('.main-page__list-head').toggleClass('open');
             }
         });
     

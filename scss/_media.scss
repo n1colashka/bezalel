@@ -583,13 +583,10 @@
         }
 
         &__item-link {
-            flex-basis: calc(50% - 5px);
+            flex-basis: auto;
+            margin-right: 5px;
         }
 
-        &__item-link-green {
-            margin-left: 10px;
-            flex-basis: calc(50% - 5px);
-        }
     }
 
     .inner-page {
@@ -638,10 +635,20 @@
 }
 
 @media (max-width: 640px) {
-   
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+    .video-page {
+        &__item-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        &__item-link {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media (max-width: 400px) {

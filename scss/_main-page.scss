@@ -1,5 +1,6 @@
 .main-page {
     padding-top: 55px;
+    overflow: hidden;
 
     .form-home {
         margin-top: 50px;
@@ -114,6 +115,7 @@
     }
 
     &__list {
+        position: relative;
         display: block;
         font-family: "Abraham-Light", sans-serif;
         font-size: 20px;
@@ -138,6 +140,12 @@
         padding-left: 30px;
         border-radius: 5px;
 
+        &.open {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+        
         &::before {
             position: absolute;
             content: "";
@@ -149,6 +157,7 @@
             border-style: solid;
             border-width: 8px 5.5px 0 5.5px;
             border-color: #000000 transparent transparent transparent;
+            transition: .3s ease;
         }
     }
 

@@ -17,7 +17,13 @@ body {
     font-family: 'Abraham-Regular', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
-    background-color: rgb(131, 183, 224);
+    background: rgb(248,165,220);
+    background: linear-gradient(180deg, rgba(248,165,220,1) 0%, rgba(248,165,220,1) 10%, rgba(255,204,102,1) 17%, rgba(235,209,140,1) 35%, rgba(201,218,204,1) 43%, rgba(201,217,204,1) 66%, rgba(248,165,220,1) 79%, rgba(248,165,220,1) 100%);
+    min-height: 100vh;
+
+    &.short-page {
+        background: linear-gradient(180deg, rgba(248,165,220,1) 0%, rgba(248,165,220,1) 18%, rgba(255,204,102,1) 48%, rgba(235,209,140,1) 63%, rgba(201,217,204,1) 100%);
+    }
 }
 
 ul {
@@ -170,8 +176,8 @@ input::-webkit-inner-spin-button {
     left: 0;
     top: 143px;
     overflow: auto;
-    backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 249, 238, 0.85);
     z-index: 91;
     padding-bottom: 150px;
 

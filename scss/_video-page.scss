@@ -67,7 +67,7 @@
         font-family: "Abraham-Bold", sans-serif;
         font-weight: bold;
         line-height: 2.06;
-        color: rgba(0, 0, 0, 0.85);
+        color: #161a43;
     }
 
     &__item-video {
@@ -82,11 +82,15 @@
         font-family: "Abraham-Regular", sans-serif;
         font-weight: normal;
         text-align: center;
-        color: #1aca90;
+        color: #161a43;
         padding: 7px 12px;
         background-color: #fff;
         border-radius: 10px;
         transition: .3s ease;
+        margin-right: 15px;
+        &:first-child {
+            margin-right: 0;
+        }
 
         &:hover {
             box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.24);
@@ -99,10 +103,9 @@
         font-family: "Abraham-Medium", sans-serif;
         font-weight: 500;
         text-align: center;
-        color: rgba(255, 255, 255, 0.85);
+        background-color: #161a43;
         padding: 7px 12px;
-        margin-left: 20px;
-        background-color: #1aca90;
+        color: #fff;
         border-radius: 10px;
         transition: .3s ease;
 

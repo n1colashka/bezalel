@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     max-width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 249, 238, 0.75);
     z-index: 90;
     padding: 48px 0;
     overflow: visible;
@@ -59,11 +59,12 @@
     }
 
     .main-page__list-items {
+        padding-left: 5px;        
         position: absolute;
-        top: -700%;
-        left: 200px;
+        bottom: calc(100% + 7px);
+        left: 0;
         z-index: 11;
-        max-height: 500px;
+        max-height: 417px;
         overflow: auto;
     }
 
