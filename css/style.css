@@ -583,6 +583,11 @@ input::-webkit-inner-spin-button {
   margin-left: 140px;
 }
 
+.main-page__mobile-img {
+  display: none;
+  margin-bottom: 30px;
+}
+
 .main-page__title {
   font-size: 160px;
   font-family: 'Abraham-Light', sans-serif;
@@ -1618,13 +1623,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 768px) {
   .home-page {
-    background: url("../images/mobile.png") bottom center no-repeat;
-  }
-  .main-page__subtitle {
-    color: #ffffff;
-  }
-  .main-page__subtitle::before {
-    background-color: #fff;
+    background: none;
   }
   .video-page__title {
     margin-bottom: 30px;
@@ -1806,6 +1805,12 @@ input::-webkit-inner-spin-button {
   .navigation {
     display: none;
   }
+  .home-page .main-page__inner {
+    margin-bottom: 30px;
+  }
+  .home-page .main-page {
+    min-height: 878px;
+  }
   .main-page {
     min-height: auto;
     padding-bottom: 20px;
@@ -1816,26 +1821,28 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
   }
+  .main-page__mobile-img {
+    display: block;
+  }
   .main-page__head {
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 270px;
+    margin-bottom: 50px;
   }
   .main-page__form-title {
     font-weight: 300;
   }
   .main-page__title {
     max-width: 100%;
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 300;
-    color: #efebe4;
     margin-bottom: 20px;
-    max-width: 300px;
   }
   .main-page__subtitle {
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 1.2;
+    font-size: 21px;
+    font-family: 'Abraham-Regular', sans-serif;
+    font-weight: 400;
+    line-height: 36px;
   }
   .main-page__subtitle::before {
     height: 2px;

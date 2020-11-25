@@ -319,14 +319,9 @@
 
 @media (max-width: 768px) {
     .home-page {
-        background: url('../images/mobile.png') bottom center no-repeat;
+        background: none;
     }
-    .main-page__subtitle {
-        color: #ffffff;
-        &::before {
-            background-color: #fff;
-        }
-    }
+    
     .video-page {
         &__title {
             margin-bottom: 30px;
@@ -572,7 +567,14 @@
         display: none;
     }
 
-    
+    .home-page {
+        .main-page__inner {
+            margin-bottom: 30px;
+        }
+        .main-page {
+            min-height: 878px;
+        }
+    }
     .main-page {
         min-height: auto;
         padding-bottom: 20px;
@@ -583,11 +585,15 @@
             justify-content: center;
             align-items: center;
         }
+        
+        &__mobile-img {
+            display: block;
+        }
 
         &__head {
             max-width: 500px;
             margin: 0 auto;
-            margin-bottom: 270px;
+            margin-bottom: 50px;
         }
 
         &__form-title {
@@ -596,17 +602,16 @@
 
         &__title {
             max-width: 100%;
-            font-size: 60px;
+            font-size: 65px;
             font-weight: 300;
-            color: #efebe4;
             margin-bottom: 20px;
-            max-width: 300px;
         }
         
         &__subtitle {
-            font-size: 30px;
-            font-weight: 300;
-            line-height: 1.2;
+            font-size: 21px;
+            font-family: 'Abraham-Regular', sans-serif;
+            font-weight: 400;
+            line-height: 36px;
 
             &::before {
                 height: 2px;
