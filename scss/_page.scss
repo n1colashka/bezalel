@@ -91,6 +91,8 @@
         line-height: 1;
         margin-bottom: 22px;
         color: #161a43;
+        transform: translateY(200%);
+        animation: text 1s ease 1 forwards;
     }
 
     &__title {
