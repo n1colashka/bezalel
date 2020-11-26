@@ -318,11 +318,21 @@
 }
 
 @media (max-width: 768px) {
+    .video-page__item-link-green {
+        font-family: 'Abraham-Regular', sans-serif;
+        font-weight: 400;
+    }
     .home-page {
         background: none;
     }
     
     .video-page {
+        .video-page__item-link-green {
+            padding: 5px;
+        }
+        &__item-link {
+            padding: 5px;
+        }
         &__title {
             margin-bottom: 30px;
         }

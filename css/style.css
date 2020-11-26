@@ -1299,8 +1299,14 @@ input::-webkit-inner-spin-button {
   bottom: calc(100% + 7px);
   left: 0;
   z-index: 11;
-  max-height: 417px;
+  max-height: calc(100vh - 320px);
   overflow: auto;
+}
+
+@media (max-width: 1200px) {
+  .bottom-form .main-page__list-items {
+    max-height: calc(100vh - 256px);
+  }
 }
 
 .page-form-mobile {
@@ -1671,8 +1677,18 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 768px) {
+  .video-page__item-link-green {
+    font-family: 'Abraham-Regular', sans-serif;
+    font-weight: 400;
+  }
   .home-page {
     background: none;
+  }
+  .video-page .video-page__item-link-green {
+    padding: 5px;
+  }
+  .video-page__item-link {
+    padding: 5px;
   }
   .video-page__title {
     margin-bottom: 30px;

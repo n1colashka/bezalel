@@ -72,11 +72,16 @@
         bottom: calc(100% + 7px);
         left: 0;
         z-index: 11;
-        max-height: 417px;
+        max-height: calc(100vh - 320px);
         overflow: auto;
-    }
 
+        @media (max-width: 1200px) {
+            max-height: calc(100vh - 256px);
+        }
+    }
 }
+
+
 
 .page-form-mobile {
     margin-bottom: 25px;
