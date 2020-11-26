@@ -340,6 +340,18 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@keyframes blinking-rev {
+  0% {
+    background-color: #161a43;
+  }
+  50% {
+    background-color: rgba(255, 249, 238, 0.75);
+  }
+  100% {
+    background-color: #161a43;
+  }
+}
+
 @keyframes text {
   0% {
     transform: translate(0, 200%);
@@ -562,6 +574,10 @@ input::-webkit-inner-spin-button {
   min-height: 1300px;
 }
 
+.form-wrapper {
+  overflow: hidden;
+}
+
 .main-page {
   padding-top: 55px;
   overflow: hidden;
@@ -645,7 +661,6 @@ input::-webkit-inner-spin-button {
 .main-page__form {
   max-width: 360px;
   width: 100%;
-  overflow: hidden;
 }
 
 .main-page__form form {
@@ -763,9 +778,11 @@ input::-webkit-inner-spin-button {
 }
 
 .main-page__form-btn {
+  font-size: 23px;
   width: 100%;
   margin-top: 10px;
   line-height: 0.8;
+  background-color: #161a43;
 }
 
 .checkmark {
@@ -1206,10 +1223,6 @@ input::-webkit-inner-spin-button {
   margin-top: -40px;
 }
 
-.blinking {
-  animation: blinking 1s ease 3;
-}
-
 .form-wrapper {
   overflow: visible;
   position: fixed;
@@ -1229,6 +1242,14 @@ input::-webkit-inner-spin-button {
 
 .bottom-form {
   padding: 48px 0;
+}
+
+.bottom-form.blinking {
+  animation: blinking 1s ease 3;
+}
+
+.bottom-form.blinking .main-page__form-btn {
+  animation: blinking-rev 1s ease 3;
 }
 
 .bottom-form form {
@@ -1654,6 +1675,9 @@ input::-webkit-inner-spin-button {
   .video-page__title {
     margin-bottom: 30px;
   }
+  .video-page__intro {
+    margin-bottom: 30px;
+  }
   .form-home {
     margin-top: 0;
   }
@@ -1956,5 +1980,11 @@ input::-webkit-inner-spin-button {
   }
   .header__menu {
     padding: 55px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .inner-page {
+    margin-bottom: 150px;
   }
 }

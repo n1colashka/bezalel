@@ -7,6 +7,10 @@
     }
 }
 
+.form-wrapper {
+    overflow: hidden;
+}
+
 .main-page {
     padding-top: 55px;
     overflow: hidden;
@@ -89,7 +93,6 @@
     &__form {
         max-width: 360px;
         width: 100%;
-        overflow: hidden;
         
         form {
             transform: translate(0, 100%);
@@ -210,9 +213,12 @@
     }
     
     &__form-btn {
+        font-size: 23px;
         width: 100%;
         margin-top: 10px;
         line-height: 0.8;
+        background-color: #161a43;
+
     }
 
 }

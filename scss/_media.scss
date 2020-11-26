@@ -326,6 +326,9 @@
         &__title {
             margin-bottom: 30px;
         }
+        &__intro {
+            margin-bottom: 30px;
+        }
     }
     .form-home {
         margin-top: 0;
@@ -728,5 +731,11 @@
 
     .header__menu {
         padding: 55px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .inner-page {
+        margin-bottom: 150px;
     }
 }
